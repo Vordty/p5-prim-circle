@@ -10,19 +10,12 @@ function setup(){
     for ( let i = 0; i < primAmount; i++){
         prim(0,0,width,height,200);
     }
-     
-    //createBorder();
 }
 
 function mouseClicked(){
     save("generative5.png");
     return false;
 }
-
-function draw(){
-    
-}
-
 
 function prim(minX,minY,maxX,maxY,radius){
 
@@ -70,15 +63,7 @@ function prim(minX,minY,maxX,maxY,radius){
         unreached.splice(uIndex,1);
 
     }
-    
-    // for ( p = 0; p < verticesAmount; p+=10){
-    //     stroke(240);
-    //     noFill();
-    //     ellipse(vertices[p].x, vertices[p].y, circleRadius);
-    // }
 }
-
-
 
 function createBorder(){
     background(17);
